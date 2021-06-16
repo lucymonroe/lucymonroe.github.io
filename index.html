@@ -2,12 +2,18 @@
 <html>
 <meta charset = "UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://lucymonroe.github.io/">
 <link rel="icon" href="https://lucymonroe.github.io/favicon.ico">
+<link rel="apple-touch-icon" href="https://lucymonroe.github.io/apple-touch-icon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+<head>
+  <title>Lucy Monroe</title>
+</head>
 
 
 <style>
@@ -62,6 +68,13 @@ h1 {
   word-spacing: 0.5px;
 }
 
+.links {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 footer {
   font-family: "Roboto Mono", monospace;
   justify-content: center;
@@ -97,6 +110,78 @@ a:active {
 }
 
 
+a.nav {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+a.nav:link {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+a.nav:visited {  
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+a.nav:hover {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+a.nav:active {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+
+
+.clicker {
+outline: none;
+cursor: pointer;
+overflow: hidden;
+position: relative;
+font-family: "Roboto Mono", monospace;
+font-size: 12px;
+font-weight: bold;
+text-decoration: underline;
+color: black;
+vertical-align: super;
+display: inline-block;
+}
+
+.hiddendiv{
+display: none;
+width: 80px;
+overflow: hidden;
+position: relative;
+font-family: "Roboto Mono", monospace;
+font-size: 12px;
+font-weight: bold;
+color: black;
+display: block;
+text-align: left;
+}
+
+.clicker:active + .hiddendiv{
+display:block;
+}
+
 
 </style>
 
@@ -111,12 +196,25 @@ a:active {
 <div class="container">
   <div class="child">
     <h1>
-        Hi, I'm <b>Lucy Monroe</b>, an Economics student at <i class="Spectral">Carnegie Mellon University</i>. Raised in the Midwest with my head in the ☁️s, I'm currently based out of → Pittsburgh<sup class="cap"> PA</sup>, where I spend my free time swimming in circles, drinking boba like water, and photographing* one moment at a time.
+        <b>LUCY MONROE</b> is an Economics student at <i class="Spectral">Carnegie Mellon University</i>. Raised in the Midwest with her head in the ☁️s, she's now based out of → Pittsburgh<sup class="cap"> (PA)</sup>, where she spends her free time swimming in <i class="Spectral">circles</i>, discovering a new found love for boba, and photographing* one moment at a time.
+<div class="clicker">LINKS</div>
+  <div class="hiddendiv">
+    <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="nav">LINKEDIN</a>
+    <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="nav">INSTAGRAM</a>
+    <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="nav">MESSAGE</a>
+  </div>
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
     </h1>
   </div>
 </div>
-
-
 
 
 
@@ -125,9 +223,6 @@ a:active {
 </body>
 
 
-<footer class=footer>
-    <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank">LINKEDIN</a> | <a href="https://www.instagram.com/ly.mnro/" target="_blank">INSTAGRAM</a>
-</footer>
 
 
 </html>
