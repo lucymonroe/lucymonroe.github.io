@@ -25,15 +25,6 @@
 
 <style>
 
-* {
-  box-sizing: border-box;
-}
-
-.menu {
-  height: 64px;
-  font-size: 18px;
-  text-align: center;
-}
 
 body {
   font-family: "Archivo", Helvetica, Arial, sans-serif;
@@ -62,7 +53,9 @@ h2 {
   font-weight: 300;
 }
 
-
+br.diff {
+  margin: 10px;
+}
 
 .accordion {
   padding: 24px;
@@ -70,7 +63,6 @@ h2 {
   font-size: 18px;
   width: 100%;
   text-align: center;
-  transition: 0.4s;
   outline: none;
   border: none;
   font-family: "Roboto Mono", monospace;
@@ -90,15 +82,6 @@ h2 {
   text-align: center;
   width: 100%;
   transition: max-height 0.2s ease-out;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-
-a {
-
 }
 
 
@@ -166,19 +149,20 @@ hr.blkline {
   
   <button class="accordion">MENU</button>
     <div class="panel">
-        <hr class="blkline"><br>
+        <hr class="blkline">
       <sup style="background-color: #FFFF00;">PROJECTS</sup><br>
         <hr class="blkline">
         <a href="" target="_blank" class="nav">EMPTY TEST</a><br>
         <hr class="blkline">
       <sup style="background-color: #FFFF00">LINKS</sup><br>
-        <hr class="blkline"><br>
+        <hr class="blkline">
         <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="nav">LINKEDIN</a><br>
         <hr class="blkline">
         <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="nav">INSTAGRAM</a><br>
         <hr class="blkline">
         <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="nav">EMAIL</a>
         <hr class="blkline">
+
 </div>
 
   
@@ -190,8 +174,8 @@ hr.blkline {
 
 <div>
   <h2>
-    PITTSBURGH, PENNSYLVANIA<br>
-    CARNEGIE MELLON UNIVERSITY<br>
+    PITTSBURGH, PENNSYLVANIA<br class="diff">
+    CARNEGIE MELLON UNIVERSITY<br class="dif">
     ECONOMICS, B.A., 2023
   </h2>
 </div>
