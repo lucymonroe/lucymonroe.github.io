@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Benne&family=Hanuman&family=IBM+Plex+Sans:wght@300&family=Inter&family=Marcellus&family=Work+Sans&display=swap" rel="stylesheet">
+
+
+
+
+
+<style>
+
+
+{
+  font-family: 'Benne', serif;
+font-family: 'Hanuman', serif; - good for link
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Inter', sans-serif; - not bad for link
+font-family: 'Marcellus', serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
+* {
+  background-color: #ececea;
+}
+
+
+body {
+  font-size: 24px;
+  font-family: 'Benne', serif;
+  line-height: 1.5;
+}
+
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  padding: 0px 0px 0px 18px;
+}
+
+.desc {
+  padding: 0px 0px 0px 18px;
+}  
+
+
+.accordion {
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+  border-top: 0.5px solid black;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.active, .accordion:hover {
+}
+
+.accordion:after {
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+
+a {}
+
+a.pan {
+  padding: 0px 0px 24px 0px;
+  display: inline-block;
+}
+
+a.pan:link {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.pan:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.pan:active {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.pan:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+
+
+
+.dot1 {
+  height: 18px;
+  width: 18px;
+  background-color: #a84444;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot2 {
+  height: 18px;
+  width: 18px;
+  background-color: #3d3d73;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot3 {
+  height: 18px;
+  width: 18px;
+  background-color: #4b2b1d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot4 {
+  height: 18px;
+  width: 18px;
+  background-color: #9a9a9a;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot5 {
+  height: 18px;
+  width: 18px;
+  background-color: #1f4c2c;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+}
+
+li a {
+  float: left;
+  display: inline;
+  padding: 14px 16px 0px 16px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+}
+
+li a.nav:active {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 18px;
+  color: black;
+}
+
+li a.nav:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+}
+
+li a.nav:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.b2t {
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  transition: 0.4s;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: underline;
+  margin-bottom: 72px;
+  padding-top: 32px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a class="nav" href="#home">Home</a></li>
+  <li><a class="nav" href="#about">News</a></li>
+  <li><a class="nav" href="#about">Contact</a></li>
+  <li><a class="nav" href="#about">About</a></li>
+</ul>
+
+
+<h1>Think22</h1>
+<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<button class="accordion"><span class="dot1"></span> The Stigma of Bypassing College</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Read article here →</a>
+</div>
+
+<button class="accordion"><span class="dot2" style="color:#9f3030"></span> The New Talent Supply Chain</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Explore project here →</a>
+</div>
+
+<button class="accordion"><span class="dot3"></span> Big Talk from Big CEOs</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Read article here →</a>
+</div>
+
+<button class="accordion"><span class="dot4"></span> The Young and the Indebted</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Read article here →</a>
+</div>
+
+<button class="accordion"><span class="dot5"></span> International Students Want Jobs, Too</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Read article here →</a>
+</div>
+
+
+<div class="b2t">
+  <a class="b2t" href="#top">
+    BACK TO TOP
+  </a>
+</div>
+
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
