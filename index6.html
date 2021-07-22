@@ -115,15 +115,15 @@ h1 {
 
 
 
-a {}
+a {
+}
 
 a.pan {
-  padding: 0px 0px 24px 0px;
   display: inline;
 }
 
 a.pan:link {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', 'Segoe UI Symbol', sans-serif;
   font-size: 18px;
   text-decoration: underline;
   color: black;
@@ -131,7 +131,7 @@ a.pan:link {
 }
 
 a.pan:hover {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', 'Segoe UI Symbol', sans-serif;
   font-size: 18px;
   text-decoration: underline;
   color: #0000FF;
@@ -139,7 +139,7 @@ a.pan:hover {
 }
 
 a.pan:active {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', 'Segoe UI Symbol', sans-serif;
   font-size: 18px;
   text-decoration: underline;
   color: #0000FF;
@@ -147,10 +147,18 @@ a.pan:active {
 }
 
 a.pan:visited {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', 'Segoe UI Symbol', sans-serif;
   font-size: 18px;
   text-decoration: underline;
   color: black;
+  width: 100%;
+}
+
+a.pan:visited:hover {
+  font-family: 'Work Sans', 'Segoe UI Symbol', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
   width: 100%;
 }
 
@@ -170,41 +178,6 @@ ul {
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
 }
-
-li a {
-  float: left;
-  display: inline;
-  padding: 14px 16px 0px 16px;
-  text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
-  color: black;
-}
-
-li a.nav:active {
-  display: inline;
-  font-family: 'Work Sans', sans-serif;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: underline;
-  font-size: 18px;
-  color: black;
-}
-
-li a.nav:hover {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
-  text-decoration: underline;
-  color: black;
-}
-
-li a.nav:visited {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-}
-
 
 
 .b2t {
@@ -232,6 +205,15 @@ footer {
   padding-bottom: 12px;
 }
 
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+  .card {
+    display: inline-block;
+  }
+}
 
 
 
@@ -258,17 +240,21 @@ footer {
   <p>Lucy Monroe is an Economics student at Carnegie Mellon University. Currently based out of Pittsburgh, she...</p>
 </div>
 
-<button class="accordion">EXPERIENCE</button>
+<button class="accordion">RESUME</button>
 <div class="panel">
   <p>Lucy Monroe is an Economics student at Carnegie Mellon University. Currently based out of Pittsburgh, she...</p>
-  <a href="https://www.linkedin.com/in/lucymonroe/" class="pan">More on Linkedin ↗</a><br>
-  <a href="https://lucymonroe.github.io/" class="pan">Download resume ↗</a>
+  <a href="https://lucymonroe.github.io/" target="_blank" class="pan">Download resume ↗</a> &nbsp;
+  <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="pan">More on Linkedin ↗</a><br>
 </div>
 
 <button class="accordion">PHOTO</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <a href="https://lucymonroe.github.io/" class="pan">Read article here →</a>
+  <div class="scrolling-wrapper">
+    <div class="card"><img src="https://lucymonroe.github.io/bus.JPG" alt="bus" height="321px" width="241px"></div>
+    <div class="card"><img src="https://lucymonroe.github.io/grounded.JPG" alt="grounded" height="321px" width="427px"></div>
+    <div class="card"><img src="https://lucymonroe.github.io/building.jpg" alt="building" height="321px" width="241px"></div>
+    <div class="card"><img src="https://lucymonroe.github.io/badminton.jpg" alt="badminton" height="321px" width="241px"></div>
+  </div>
 </div>
 
 <button class="accordion">EXPLORE</button>
@@ -279,8 +265,8 @@ footer {
 
 <button class="accordion">LINKS</button>
 <div class="panel">
-  <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="pan">LinkedIn ↗</a>
-  <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="pan">Instagram ↗</a>
+  <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="pan">LinkedIn ↗</a> &nbsp;
+  <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="pan">Instagram ↗</a> &nbsp;
   <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="pan">Email ↗</a>
 </div>
 
