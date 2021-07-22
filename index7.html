@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Benne&family=Hanuman&family=IBM+Plex+Sans:wght@300&family=Inter&family=Marcellus&family=Work+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&family=Spectral:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
+
+
+<title>Lucy Monroe</title>
+
+<style>
+
+
+{
+  font-family: 'Benne', serif;
+font-family: 'Hanuman', serif; - good for link
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Inter', sans-serif; - not bad for link
+font-family: 'Marcellus', serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
+* {
+  background-color: #ececea;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  width: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 0px;
+}
+
+
+
+
+body {
+  font-size: 24px;
+  font-family: 'Benne', serif;
+  line-height: 1.5;
+}
+
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  padding: 0px 0px 0px 18px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.desc {
+  padding: 0px 0px 0px 18px;
+}  
+
+
+.accordion {
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 48px;
+  transition: 0.4s;
+  border-top: 0.5px solid black;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.active, .accordion:hover {
+}
+
+.accordion:after {
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+
+a {}
+
+a.pan {
+  padding: 0px 0px 24px 0px;
+  display: inline-block;
+}
+
+a.pan:link {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.pan:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.pan:active {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.pan:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.pan:visited:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+}
+
+li a {
+  float: left;
+  display: inline;
+  padding: 14px 16px 0px 16px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+}
+
+li a.nav:active {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 18px;
+  color: black;
+}
+
+li a.nav:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+}
+
+li a.nav:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.b2t {
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  transition: 0.4s;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: underline;
+  margin-bottom: 72px;
+  padding-top: 32px;
+  display: block;
+}
+
+
+footer {
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+
+a.soli {
+  display: inline;
+}
+
+a.soli:link {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.soli:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.soli:active {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.soli:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.soli:visited:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 360px;
+  
+  .card {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<h1>Lucy Monroe</h1>
+
+<button class="accordion">ABOUT</button>
+<div class="panel">
+  <p>Lucy Monroe is an Economics student at Carnegie Mellon University. Currently based out of Pittsburgh, she...</p>
+</div>
+
+<button class="accordion">RESUME</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Download resume →</a>
+</div>
+
+<button class="accordion">PHOTO</button>
+<div class="panel">
+  <div class="scrolling-wrapper">
+    <div class="card"><img src="https://lucymonroe.github.io/bus.JPG" alt="bus" height="360px" width=auto></div>
+    <div class="card"><img src="https://lucymonroe.github.io/grounded.JPG" alt="grounded" height="360px" width="auto"></div>
+    <div class="card"><img src="https://lucymonroe.github.io/building.jpg" alt="building" height="360px" width="auto"></div>
+    <div class="card"><img src="https://lucymonroe.github.io/badminton.jpg" alt="badminton" height="360px" width="auto"></div>
+  </div>
+</div>
+
+<button class="accordion">EXPLORE</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Read article here →</a>
+</div>
+
+<button class="accordion">LINKS</button>
+<div class="panel">
+  <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="soli">LinkedIn ↗</a> &nbsp;
+  <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="soli">Instagram ↗</a> &nbsp;
+  <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="soli">Email ↗</a>
+</div>
+
+
+<div class="b2t">
+  <a class="b2t" href="#top">
+    BACK TO TOP
+  </a>
+</div>
+
+<footer>
+  Copyright © Lucy Monroe, 2021
+</footer>
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
