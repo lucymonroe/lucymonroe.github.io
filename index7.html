@@ -107,10 +107,12 @@ h1 {
 }
 
 .active, .accordion:hover {
+  color: #0000FF;
 }
 
 .accordion:after {
   font-weight: bold;
+  color: #0000FF;
   float: right;
   margin-left: 5px;
 }
@@ -293,13 +295,73 @@ a.soli:visited:hover {
   width: 100%;
 }
 
+a.photo {
+  color: black;
+  cursor: pointer;
+  padding: 10px 18px;
+  width: 100vw;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  outline: none;
+  font-size: 48px;
+  font-family: 'Work Sans', sans-serif;
+  display: inline-block;
+}
+
+a.photo:link {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 48px;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+a.photo:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 48px;
+  text-decoration: none;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.photo:active {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 48px;
+  text-decoration: none;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.photo:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 48px;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+a.photo:visited:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 48px;
+  text-decoration: none;
+  color: #0000FF;
+  width: 100%;
+}
+
+hr.line {
+  margin: 0;
+  border-top: 0.5px solid black;
+  width: 100%;
+}
+
 
 
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  height: 360px;
+/***  height: 360px; ***/
   
   .card {
     display: inline-block;
@@ -320,36 +382,32 @@ a.soli:visited:hover {
 
 <button class="accordion">ABOUT</button>
 <div class="panel">
-  <p>Lucy Monroe is an Economics student at Carnegie Mellon University. Currently based out of Pittsburgh, she...</p>
+  <p>Lucy Monroe is a Economics (B.A., 2023) student at Carnegie Mellon University. She is currently based out of Pittsburgh, PA, where she spends her free time swimming laps, learning mostly useful skills, and thieving vicariously through international heist series on Netflix.</p>
+  <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="pan">Say hello 🡢</a>
 </div>
 
 <button class="accordion">RESUME</button>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <a href="https://lucymonroe.github.io/" class="pan">Download resume →</a>
+  <a href="https://lucymonroe.github.io/" class="pan">Download resume 🡢</a>
 </div>
 
-<button class="accordion">PHOTO</button>
-<div class="panel">
-  <div class="scrolling-wrapper">
-    <div class="card"><img src="https://lucymonroe.github.io/bus.JPG" alt="bus" height="360px" width=auto></div>
-    <div class="card"><img src="https://lucymonroe.github.io/grounded.JPG" alt="grounded" height="360px" width="auto"></div>
-    <div class="card"><img src="https://lucymonroe.github.io/building.jpg" alt="building" height="360px" width="auto"></div>
-    <div class="card"><img src="https://lucymonroe.github.io/badminton.jpg" alt="badminton" height="360px" width="auto"></div>
-  </div>
-</div>
+
+
+<hr class="line"> </hr>
+<a href="https://lucymonroe.github.io/photography.html" class="photo">PHOTO 🡢 ⬀⬈🡪🡲→</a>
 
 <button class="accordion">PROJECTS</button>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <a href="https://lucymonroe.github.io/" class="pan">Read article here →</a>
+  <a href="https://lucymonroe.github.io/" class="pan">Read article here 🡢</a>
 </div>
 
 <button class="accordion">LINKS</button>
 <div class="panel">
-  <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="soli">LinkedIn →</a> &nbsp;
-  <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="soli">Instagram →</a> &nbsp;
-  <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="soli">Email →</a>
+  <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="soli">LinkedIn 🡢</a> &nbsp;
+  <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="soli">Instagram 🡢</a> &nbsp;
+  <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="soli">Email 🡢</a>
 </div>
 
 
