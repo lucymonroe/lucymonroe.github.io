@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = "UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://lucymonroe.github.io/">
-
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://lucymonroe.github.io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lucymonroe.github.io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lucymonroe.github.io/favicon-16x16.png">
-<link rel="manifest" href="https://lucymonroe.github.io/site.webmanifest">
-<link rel="mask-icon" href="https://lucymonroe.github.io/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
 
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Benne&family=Hanuman&family=IBM+Plex+Sans:wght@300&family=Inter&family=Marcellus&family=Work+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&family=Spectral:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
 
 
 
-  
+<link rel="apple-touch-icon" sizes="57x57" href="https://lucymonroe.github.io/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://lucymonroe.github.io/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://lucymonroe.github.io/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://lucymonroe.github.io/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://lucymonroe.github.io/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://lucymonroe.github.io/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://lucymonroe.github.io/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://lucymonroe.github.io/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://lucymonroe.github.io/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://lucymonroe.github.io/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lucymonroe.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://lucymonroe.github.io/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lucymonroe.github.io/favicon-16x16.png">
+<link rel="manifest" href="https://lucymonroe.github.io/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
 <title>Lucy Monroe</title>
 
-
 <style>
+
+
+{
+  font-family: 'Benne', serif;
+font-family: 'Hanuman', serif; - good for link
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Inter', sans-serif; - not bad for link
+font-family: 'Marcellus', serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
+* {
+  background-color: #ececea;
+}
+
 
 
 ::-webkit-scrollbar {
@@ -47,135 +73,301 @@
 
 
 body {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  font-weight: 200;
+  font-size: 24px;
+  font-family: 'Benne', serif;
+  line-height: 1.5;
 }
-
-
 
 
 h1 {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
-  font-size: 64px;
-  position: relative;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
   text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-weight: 300;
 }
 
-
-h2 {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
-  font-size: 32px;
-  position: relative;
-  text-align: center;
-  margin-bottom: 100px;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-weight: 300;
-}
+.desc {
+  padding: 0px 0px 0px 18px;
+}  
 
 
 .accordion {
-  background-color: white;
   color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: center;
+  text-align: left;
   outline: none;
-  font-size: 18px;
+  font-size: 48px;
   transition: 0.4s;
-  font-family: "Roboto Mono", monospace;
+  border-top: 0.5px solid black;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .active, .accordion:hover {
-  background-color: white;
-  text-decoration: underline;
+  color: #0000FF;
 }
 
 .accordion:after {
-  color: white;
   font-weight: bold;
+  color: #0000FF;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-
 }
 
 .panel {
   padding: 0 18px;
-  background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  text-align: center;
 }
 
 
 
-a.nav {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
-  font-size: 48px;
+
+a {}
+
+a.pan {
+  padding: 0px 0px 24px 0px;
+  display: inline-block;
+}
+
+a.pan:link {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
   color: black;
   width: 100%;
-  font-weight: 300;
 }
 
-a.nav:link {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
+a.pan:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.pan:active {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.pan:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.pan:visited:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+}
+
+li a {
+  float: left;
+  display: inline;
+  padding: 14px 16px 0px 16px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+}
+
+li a.nav:active {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 18px;
+  color: black;
+}
+
+li a.nav:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+}
+
+li a.nav:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.b2t {
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  transition: 0.4s;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: underline;
+  margin-bottom: 72px;
+  padding-top: 32px;
+  display: block;
+}
+
+footer {
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+
+a.soli {
+  display: inline;
+}
+
+a.soli:link {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.soli:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.soli:active {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.soli:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: black;
+  width: 100%;
+}
+
+a.soli:visited:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #0000FF;
+  width: 100%;
+}
+
+a.photo {
+  color: black;
+  cursor: pointer;
+  padding: 10px 18px;
+  width: 100vw;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  outline: none;
+  font-size: 48px;
+  font-family: 'Work Sans', sans-serif;
+  display: inline-block;
+}
+
+a.photo:link {
+  font-family: 'Work Sans', sans-serif;
   font-size: 48px;
   text-decoration: none;
   color: black;
   width: 100%;
 }
 
-a.nav:visited {  
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
+a.photo:hover {
+  font-family: 'Work Sans', sans-serif;
   font-size: 48px;
-  color: black;
+  text-decoration: none;
+  color: #0000FF;
   width: 100%;
-  font-weight: 300;
 }
 
-a.nav:hover {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
+a.photo:active {
+  font-family: 'Work Sans', sans-serif;
   font-size: 48px;
-  text-decoration: underline;
-  color: black;
+  text-decoration: none;
+  color: #0000FF;
   width: 100%;
-  font-weight: 300;
 }
 
-a.nav:active {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
+a.photo:visited {
+  font-family: 'Work Sans', sans-serif;
   font-size: 48px;
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
   width: 100%;
-  font-weight: 300;
 }
 
-
-hr {
-  border: 0.5px solid black;
-  width: 90%;
-}
-
-footer {
-  font-size: 12px;
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
-  color: black;
-  text-align: center;
+a.photo:visited:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 48px;
+  text-decoration: none;
+  color: #0000FF;
   width: 100%;
-  padding-bottom: 12px;
-  position: fixed;
 }
+
+hr.line {
+  margin: 0;
+  border-top: 0.5px solid black;
+  width: 100%;
+}
+
+
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+/***  height: 360px; ***/
+  
+  .card {
+    display: inline-block;
+  }
+}
+
+
+
 
 
 
@@ -184,38 +376,43 @@ footer {
 </head>
 <body>
 
-<button class="accordion">MENU</button>
-<div class="panel">
-  <p>
-        <hr class="blkline">
-      <sup style="background-color: #FFFF00;">PROJECTS</sup><br>
-        <hr class="blkline">
-        <a href="https://lucymonroe.github.io/photography.html" class="nav">PHOTO</a><br>
-        <hr class="blkline">
-      <sup style="background-color: #FFFF00">LINKS</sup><br>
-        <hr class="blkline">
-        <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="nav">LINKEDIN</a><br>
-        <hr class="blkline">
-        <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="nav">INSTAGRAM</a><br>
-        <hr class="blkline">
-        <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="nav">EMAIL</a>
-        <hr class="blkline">
-</p>
-
-
-</div>
-
 
 <h1>Lucy Monroe</h1>
 
-<h2>
-  PITTSBURGH, PENNSYLVANIA<br>
-  CARNEGIE MELLON UNIVERSITY<br>
-  ECONOMICS, B.A., 2023
-</h2>
+
+<button class="accordion">ABOUT</button>
+<div class="panel">
+  <p>Lucy Monroe is a Economics (B.A., 2023) student at Carnegie Mellon University. She is currently based out of Pittsburgh, PA, where she spends her free time swimming laps, learning mostly useful skills, and thieving vicariously through international heist series on Netflix.</p>
+  <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="pan">Say hello →</a>
+</div>
+
+<button class="accordion">RESUME</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Download resume →</a>
+</div>
+
+
+
+<hr class="line"> </hr>
+<a href="https://lucymonroe.github.io/photography.html" class="photo">PHOTO 🡢</a>
+
+<button class="accordion">PROJECTS</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a href="https://lucymonroe.github.io/" class="pan">Read article here →</a>
+</div>
+
+<button class="accordion">LINKS</button>
+<div class="panel">
+  <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="soli">LinkedIn →</a> &nbsp;
+  <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="soli">Instagram →</a> &nbsp;
+  <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="soli">Email →</a>
+</div>
+
 
 <footer>
-  Copyright © Lucy Monroe, 2021
+  © Lucy Monroe, 2021
 </footer>
 
 
@@ -237,6 +434,19 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

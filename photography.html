@@ -16,6 +16,7 @@
 
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Benne&family=Hanuman&family=IBM+Plex+Sans:wght@300&family=Inter&family=Marcellus&family=Work+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&family=Spectral:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
 
 
@@ -44,6 +45,10 @@
 }
 
 
+* {
+  background-color: #ececea;
+}
+
 
 
 body {
@@ -54,27 +59,23 @@ body {
 
 
 
-
 h1 {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
-  font-size: 64px;
-  position: relative;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
   text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-weight: 300;
 }
 
-
 h2 {
-  font-family: "Archivo", Helvetica, Arial, sans-serif;
   font-size: 32px;
   position: relative;
   text-align: center;
   margin-bottom: 50px;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-weight: 300;
+  color: #0000FF;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  top: 30px;
 }
 
 
@@ -225,23 +226,6 @@ div.desc {
 }
 
 
-
-.b2t {
-  color: black;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 12px;
-  transition: 0.4s;
-  font-family: "Roboto Mono", monospace;
-  text-decoration: underline;
-  margin-bottom: 80px;
-  padding-top: 80px;
-  display: block;
-}
-
 footer {
   font-size: 12px;
   font-family: "Archivo", Helvetica, Arial, sans-serif;
@@ -252,6 +236,37 @@ footer {
 }
 
 
+.fixed-nav {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: #0000FF;
+  width: 100vw;
+  text-align: center;
+  display: inline-block;
+  background: transparent;
+  text-decoration: none;
+  position: fixed;
+  left: 0;
+  top: 12px;
+}
+
+.fixed-nav:hover {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: #0000FF;
+  width: 100vw;
+  text-align: center;
+  display: inline-block;
+  background: transparent;
+  text-decoration: underline;
+  position: fixed;
+  left: 0;
+  top: 12px;
+}
+
+
 
 
 
@@ -259,35 +274,13 @@ footer {
 </head>
 <body>
 
-<button class="accordion">MENU</button>
-<div class="panel">
-  <p>
-        <hr class="blkline">
-        <a href="https://lucymonroe.github.io/" class="nav">HOME</a><br>
-        <hr class="blkline">
-      <sup style="background-color: #FFFF00;">PROJECTS</sup><br>
-        <hr class="blkline">
-        <a href="https://lucymonroe.github.io/photography.html" class="nav">PHOTO</a><br>
-        <hr class="blkline">
-      <sup style="background-color: #FFFF00">LINKS</sup><br>
-        <hr class="blkline">
-        <a href="https://www.linkedin.com/in/lucymonroe/" target="_blank" class="nav">LINKEDIN</a><br>
-        <hr class="blkline">
-        <a href="https://www.instagram.com/ly.mnro/" target="_blank" class="nav">INSTAGRAM</a><br>
-        <hr class="blkline">
-        <a href="mailto:lbmonroe@andrew.cmu.edu" target="_blank" class="nav">EMAIL</a>
-        <hr class="blkline">
-</p>
-
-
-</div>
-
-
-<h1>Lucy Monroe</h1>
 
 <h2>
   PHOTOGRAPHY
 </h2>
+
+
+<a class="fixed-nav" href="https://lucymonroe.github.io/">Lucy Monroe</a>
 
 
 
@@ -413,15 +406,8 @@ footer {
 </div>
 
 
-<div class="b2t">
-  <a class="b2t" href="#top">
-    BACK TO TOP
-  </a>
-</div>
-
-
 <footer>
-  Copyright © Lucy Monroe, 2021
+  © Lucy Monroe, 2021
 </footer>
 
 
