@@ -142,10 +142,30 @@
         font-family: "Roboto Mono", monospace;
         color: #524c34;
         font-size: 12px;
-        text-decoration: underline;
         text-align: left;
         font-weight: 500;
         padding: 96px 0px 0px 0px;
+    }
+
+    .blog-link {
+        font-family: "Roboto Mono", monospace;
+        color: #524c34;
+        font-size: 12px;
+        text-align: left;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    a.blog-link:visited {
+        color: #524c34;
+    }
+
+    a.blog-link:hover {
+        color: #bfb943;
+    }
+
+    a.blog-link:active {
+        color: #bfb943;
     }
 
     .blog {
@@ -184,7 +204,7 @@
         font-size: 12px;
         font-family: "Roboto Mono", monospace;
         color: #524c34;
-        padding: 48px 0px 96px 0px;
+        padding: 48px 0px;
         background: transparent;
         bottom: 0px;
         position: relative;
