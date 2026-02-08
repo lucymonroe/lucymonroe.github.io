@@ -153,7 +153,7 @@
         grid-template-columns:  1fr;
     }
 
-    a.blogcol:link {
+    a.blogcol {
         font-family: "Roboto Mono", monospace;
         font-weight: 400;
         font-size: 12px;
@@ -173,13 +173,11 @@
     .blogcol:hover {
         background: #ede1c9;
         color: #524c34;
-        background: #ede1c9;
     }
 
     .blogcol:active {
         background: #ede1c9;
         color: #524c34;
-        background: #ede1c9;
     } 
 
     /* FOOTER */
