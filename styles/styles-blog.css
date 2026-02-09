@@ -155,7 +155,7 @@
         font-weight: 500;
         text-decoration: none;
     }
-    
+
     a.blog-link:visited {
         color: #524c34;
     }
@@ -256,7 +256,7 @@
         text-align: left;
         position: static;
         background: transparent;
-        margin: 12px 0px 0px 0px;
+        margin: 8px 0px 0px 0px;
         top: 0px;
         color: #524c34;
         font-family: "Jacquarda Bastarda 9 Charted", serif;
@@ -316,7 +316,7 @@
         background: transparent;
         color: #524c34;
         font-family: "Jacquarda Bastarda 9 Charted", serif;
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 400;
     }
 

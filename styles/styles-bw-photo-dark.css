@@ -119,14 +119,14 @@
         grid-template-columns: 3fr 1fr 1fr;
         z-index: 999;
         padding: 0px 8px;
-        margin: 8px 8px 8px 8px;
+        margin: 4px 8px 4px 8px;
     }
 
     .hdrcol-left {
         text-align: left;
         position: static;
         background: transparent;
-        margin: 12px 0px 0px 0px;
+        margin: 8px 0px 0px 0px;
         top: 0px;
         color: #ede1c9;
         font-family: "Jacquarda Bastarda 9 Charted", serif;
@@ -186,7 +186,7 @@
         background: transparent;
         color: #ede1c9;
         font-family: "Jacquarda Bastarda 9 Charted", serif;
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 400;
     }
     
